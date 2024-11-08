@@ -3,7 +3,7 @@
     <nav class="bg-gray-900 border-gray-700">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <RouterLink to="/" class="flex items-center rtl:space-x-reverse">
-                <img src="https://cdn.lunaiz.com/kghs/khbs.svg" class="w-[7.5rem]" alt="lunaiz logo" />
+                <object data="https://cdn.lunaiz.com/kghs/khbs.svg" class="w-[7.5rem]" alt="khbs logo" />
             </RouterLink>
             <button data-collapse-toggle="navbar-coll" type="button"
                 class="inline-flex items-center p-2 w-10 h-10 z-50 justify-center text-sm rounded-lg md:hidden text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
