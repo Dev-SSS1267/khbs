@@ -14,8 +14,8 @@ export default {
       'display': ['Product Sans', 'NanumSquareNeoVar'],
       'body': ['Product Sans', 'NanumSquareNeoVar'],
     },
-    darkMode: 'class',
   },
   plugins: [
+    require('flowbite/plugin')
   ],
 }
