@@ -7,7 +7,7 @@
     </h1>
   
     <main v-else class="space-y-3">
-      <RouterLink v-for="notice in paginatedNotices" :key="notice._id" :to="`/media/notices/` + notice._id" class="block">
+      <RouterLink v-for="notice in paginatedNotices" :key="notice._id" :to="`/notice/` + notice._id" class="block">
         <ListItem :title="notice.title" :descOne="getPreview(notice.content)"
                   :date="formattedDate(notice.createDate)" :author="notice.author">
           <template #img>
