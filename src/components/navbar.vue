@@ -22,6 +22,11 @@
                 <ul
                     class="flex flex-col font-medium text-lg p-4 md:p-0 mt-4 border rounded md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  bg-gray-800 md:bg-gray-900 border-gray-700">
                     <li>
+                        <RouterLink to="/introduce" style="text-decoration: none!important"
+                            class="block py-2 px-3 rounded md:border-0 md:p-0 no-underline hover:no-underline text-white md:hover:text-gray-300 hover:bg-gray-700 hover:text-white md:hover:bg-transparent">
+                            소개</RouterLink>
+                    </li>
+                    <li>
                         <RouterLink to="/schedule" style="text-decoration: none!important"
                             class="block py-2 px-3 rounded md:border-0 md:p-0 no-underline hover:no-underline text-white md:hover:text-gray-300 hover:bg-gray-700 hover:text-white md:hover:bg-transparent">
                             방송 일정</RouterLink>

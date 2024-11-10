@@ -11,6 +11,7 @@ import IssueReport from "@/views/IssueReport.vue";
 import NoticeManage from "@/views/NoticeManage.vue";
 import IssueManage from "@/views/IssueManage.vue";
 import ScheduleManage from "@/views/ScheduleManage.vue";
+import Introduce from "@/views/Introduce.vue";
 
 const routes = [
   { path: "/", name: "Home", component: Home },
@@ -25,6 +26,7 @@ const routes = [
   { path: "/admin/notice", name: "NoticeManage", component: NoticeManage },
   { path: "/admin/issue", name: "IssueManage", component: IssueManage },
   { path: "/admin/schedule", name: "ScheduleManage", component: ScheduleManage },
+  { path: "/introduce", name: "Introduce", component: Introduce },
 ];
 
 const router = createRouter({

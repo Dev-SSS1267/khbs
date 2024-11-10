@@ -15,7 +15,7 @@
                             class="bi bi-youtube"></i></a>
                 </div>
             </div>
-            <p class="mt-3">경기고등학교 방송부ㅣ부장 박지웅</p>
+            <p class="mt-2">경기고등학교 방송부ㅣ부장 박지웅</p>
             <p class="mt-2">관리동 3층 방송실</p>
             <a href="/admin" class="mt-2 block md:hidden">Ⓒ 2024 lunaiz, all rights reserved.</a>
         </div>
@@ -26,7 +26,7 @@
                 </object></a>
             <p class="mt-2">서울특별시교육청 경기고등학교</p>
             <p class="mt-2">서울특별시 강남구 영동대로 643</p>
-            <a href="/admin" class="mt-2">Ⓒ 2024 lunaiz, all rights reserved.</a>
+            <a href="/admin" class="mt-3">Ⓒ 2024 lunaiz, all rights reserved.</a>
         </div>
     </div>
 </template>
