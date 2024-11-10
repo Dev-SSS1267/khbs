@@ -12,6 +12,7 @@ import NoticeManage from "@/views/NoticeManage.vue";
 import IssueManage from "@/views/IssueManage.vue";
 import ScheduleManage from "@/views/ScheduleManage.vue";
 import Introduce from "@/views/Introduce.vue";
+import songRequest from "@/views/songRequest.vue";
 
 const routes = [
   { path: "/", name: "Home", component: Home },
@@ -27,6 +28,7 @@ const routes = [
   { path: "/admin/issue", name: "IssueManage", component: IssueManage },
   { path: "/admin/schedule", name: "ScheduleManage", component: ScheduleManage },
   { path: "/introduce", name: "Introduce", component: Introduce },
+  { path: "/songrequest", name: "songRequest", component: songRequest },
 ];
 
 const router = createRouter({

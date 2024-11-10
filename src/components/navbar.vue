@@ -28,6 +28,11 @@
                             소개</RouterLink>
                     </li>
                     <li>
+                        <RouterLink to="/songrequest" style="text-decoration: none!important"
+                            class="block py-2 px-3 rounded md:border-0 md:p-0 no-underline hover:no-underline text-white md:hover:text-gray-300 hover:bg-gray-700 hover:text-white md:hover:bg-transparent">
+                            신청곡</RouterLink>
+                    </li>
+                    <li>
                         <RouterLink to="/schedule" style="text-decoration: none!important"
                             class="block py-2 px-3 rounded md:border-0 md:p-0 no-underline hover:no-underline text-white md:hover:text-gray-300 hover:bg-gray-700 hover:text-white md:hover:bg-transparent">
                             방송 일정</RouterLink>
