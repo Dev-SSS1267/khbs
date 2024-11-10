@@ -10,15 +10,12 @@
         <div v-if="showScheduleForm" class="my-4 p-4 bg-gray-800 rounded">
             <input v-model="newSchedule.title" placeholder="방송 제목" class="bg-gray-700 border-gray-600 p-2 border rounded w-full mb-2" />
             <input v-model="newSchedule.period" placeholder="교시" class="bg-gray-700 border-gray-600 p-2 border rounded w-full mb-2" />
-            <textarea v-model="newSchedule.content" placeholder="방송 내용"
-                class="bg-gray-700 border-gray-600 p-2 border rounded w-full mb-2"></textarea>
             <input v-model="newSchedule.date" @input="formatDate" type="date" max="9999-12-31" class="bg-gray-700 border-gray-600 p-2 border rounded w-full mb-2" />
             <button @click="addSchedule" class="bg-green-500 text-white px-4 py-2 rounded">Save Schedule</button>
         </div>
 
         <div v-for="schedule in schedules" :key="schedule._id" class="my-4 p-4 bg-gray-800 rounded">
             <h3 class="text-xl font-semibold"><span v-if="schedule.period">{{ schedule.period }}교시 </span>{{ schedule.title }}</h3>
-            <p>{{ schedule.content }}</p>
             <p>{{ formatDate(schedule.date) }}</p>
             <button @click="deleteSchedule(schedule._id)" class="bg-red-500 text-white px-3 py-1 mt-2 rounded">
                 Delete
@@ -39,7 +36,7 @@ export default {
         return {
             schedules: [],
             showScheduleForm: false,
-            newSchedule: { title: "", period: "", content: "", date: "", author: "경기고등학교 방송부" },
+            newSchedule: { title: "", period: "", date: "", author: "관리자" },
         };
     },
     methods: {
@@ -59,7 +56,7 @@ export default {
             try {
                 await api.post("/schedules", this.newSchedule);
                 this.fetchSchedules(); // 업데이트된 목록 가져오기
-                this.newSchedule = { title: "", period:"", content: "", date: "" }; // 입력 초기화
+                this.newSchedule = { title: "", period:"", date: "" }; // 입력 초기화
                 this.showScheduleForm = false;
             } catch (error) {
                 console.error("Failed to add schedule:", error);
