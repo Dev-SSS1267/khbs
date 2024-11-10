@@ -41,7 +41,7 @@ export default {
         return {
             notices: [],
             showNoticeForm: false,
-            newNotice: { title: "", content: "", author: "경기고등학교 방송부" },
+            newNotice: { title: "", content: "", author: "관리자" },
         };
     },
     methods: {

@@ -10,6 +10,7 @@
             <button onclick="location.href='/admin/issue';" class="bg-gray-700 text-white py-20 text-xl px-4 w-full rounded-xl hover:bg-gray-800">문의관리</button>
             <button onclick="location.href='/admin/song';" class="bg-gray-700 text-white py-20 text-xl px-4 w-full rounded-xl hover:bg-gray-800">신청곡 관리</button>
         </div>
+        <p class="text-center mt-10 text-lg">웹사이트 관련 문의: support@lunaiz.com</p>
 
     </div>
 </template>
