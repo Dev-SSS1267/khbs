@@ -7,7 +7,6 @@
             <h2 class="text-lg font-bold text-gray-100">{{ formatDate(date) }}</h2>
             <div v-for="schedule in items" :key="schedule._id" class="mx-2 bg-gray-700 rounded mt-2 p-4">
                 <h2 class="text-xl font-semibold"><span v-if="schedule.period">{{ schedule.period }}교시 </span>{{ schedule.title }}</h2>
-                <p class="text-gray-300 text-base mt-3">{{ schedule.content }}</p>
             </div>
         </div>
     </div>
