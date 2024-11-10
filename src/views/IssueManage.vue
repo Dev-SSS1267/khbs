@@ -17,6 +17,9 @@
                 <button @click="toggleResponseForm(issue._id)" class="bg-blue-500 text-white px-4 py-2 mt-2 rounded">
                     {{ activeIssueId === issue._id ? "취소" : "답변하기" }}
                 </button>
+                <button @click="toggleDelete(issue._id)" class="bg-red-500 text-white px-4 py-2 mt-2 ml-5 rounded">
+                    삭제하기
+                </button>
 
                 <!-- 답변 폼 -->
                 <div v-if="activeIssueId === issue._id" class="my-4 p-4 bg-gray-700 rounded">
@@ -75,6 +78,16 @@ export default {
                 this.responseText = ""; // 답변 텍스트 초기화
             } catch (error) {
                 console.error("Failed to add response:", error);
+            }
+        },
+        async toggleDelete(issueId) {
+            if (confirm("정말로 삭제하시겠습니까?")) {
+                try {
+                    await api.delete(`/issues/${issueId}`);
+                    this.fetchIssues(); // 업데이트된 목록 가져오기
+                } catch (error) {
+                    console.error("Failed to delete issue:", error);
+                }
             }
         },
         formatDate(date) {
