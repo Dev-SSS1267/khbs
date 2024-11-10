@@ -13,8 +13,8 @@
                 <button v-if="song.done === false" @click="doneSong(song._id)" class="bg-blue-500 text-white px-3 py-2 mt-3 mr-4 rounded">
                     승인하기
                 </button>
-                <button v-if="song.done === true" @click="cancelSong(song._id)" class="bg-red-200 text-white px-3 py-2 mt-3 mr-4 rounded">
-                    승인하기
+                <button v-if="song.done === true" @click="cancelSong(song._id)" class="bg-red-500 text-white px-3 py-2 mt-3 mr-4 rounded">
+                    승인취소
                 </button>
                 <button @click="deleteSong(song._id)" class="bg-red-500 text-white px-3 py-2 mt-3 rounded">
                     삭제하기
