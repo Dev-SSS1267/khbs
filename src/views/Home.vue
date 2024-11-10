@@ -17,16 +17,42 @@
       <!-- 방송일정 카드 그리드 -->
       <p class="mt-[7.5rem] text-xl font-semibold">예정된 방송일정</p>
       <div class="flex flex-wrap justify-center mt-[2rem] gap-4 max-w-screen-lg">
-        <div
-          v-for="schedule in nearestSchedules"
-          :key="schedule._id"
+        <div v-for="schedule in nearestSchedules" :key="schedule._id"
           class="bg-gray-800 bg-opacity-90 rounded-lg py-3 px-6 shadow-lg w-80 md:w-60">
-          <p class="md:text-lg text-base break-keep text-gray-400">{{ formatDate(schedule.date) }}<span v-if="schedule.period"> &nbsp; {{ schedule.period }}교시</span></p>
+          <p class="md:text-lg text-base break-keep text-gray-400">{{ formatDate(schedule.date) }}<span
+              v-if="schedule.period"> &nbsp; {{ schedule.period }}교시</span></p>
           <h3 class="text-base md:text-lg font-bold text-gray-200 mt-1 mb-3">{{ schedule.title }}</h3>
         </div>
       </div>
     </div>
   </div>
+  <!-- <div class="mx-auto mt-[10rem] overflow-hidden max-w-screen-xl">
+    <section class="py-12">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-8 text-gray-200">방송부 활동 소개</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-gray-800 rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-4">학교 행사 지원</h3>
+            <p class="text-gray-400 break-keep">
+              입학식, 학생회장 토론회, 경기컵, 화동제, 개교기념식, 탁구제전, 졸업식 등 학교 행사 운영을 지원합니다.
+            </p>
+          </div>
+          <div class="bg-gray-800 rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-4">교내 방송 운영</h3>
+            <p class="text-gray-400 break-keep">
+              방송으로 진행되는 각종 교육 등 교내 방송을 지원하며, 등굣길 음악 방송 등의 프로그램도 진행하고 있습니다.
+            </p>
+          </div>
+          <div class="bg-gray-800 rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-4">영상 제작</h3>
+            <p class="text-gray-400 break-keep">
+              각종 행사를 촬영한 영상, 교가 영상 등을 제작하여 제공하고 있습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div> -->
 </template>
 
 <script>
