@@ -74,6 +74,7 @@ onMounted(fetchNotice);
         <hr class="h-px border-0 mb-10 bg-gray-700">
         <!-- 내용 -->
         <p class="text-lg leading-relaxed whitespace-pre-wrap break-keep text-gray-300" v-if="issue.response">
+            {{ issue.response }}
         </p>
         <p class="text-lg leading-relaxed whitespace-pre-wrap break-keep text-gray-300" v-else>
             답변이 아직 작성되지 않았습니다.</p>
