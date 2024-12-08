@@ -5,6 +5,9 @@
 
     <!-- 문제 신고 버튼 -->
     <div class="flex justify-center p-4 mb-[5rem]">
+        <a href="https://cdn.lunaiz.com/kghs/Broadcast%20Solution.pdf" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 me-4 rounded">
+            문제 해결 가이드
+        </a>
         <RouterLink to="/issue/report" class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded">
             문제 신고하기
         </RouterLink>
