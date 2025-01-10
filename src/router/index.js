@@ -14,6 +14,7 @@ import ScheduleManage from "@/views/ScheduleManage.vue";
 import Introduce from "@/views/Introduce.vue";
 import songRequest from "@/views/songRequest.vue";
 import songManage from "@/views/songManage.vue";
+import Apply from "@/views/Apply.vue";
 
 const routes = [
   { path: "/", name: "Home", component: Home },
@@ -31,6 +32,7 @@ const routes = [
   { path: "/introduce", name: "Introduce", component: Introduce },
   { path: "/songrequest", name: "songRequest", component: songRequest },
   { path: "/admin/song", name: "songManage", component: songManage },
+  { path: "/apply", name: "Apply", component: Apply }
 ];
 
 const router = createRouter({

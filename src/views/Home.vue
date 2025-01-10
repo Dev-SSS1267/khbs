@@ -14,6 +14,10 @@
         Kyunggi High Broadcasting System
       </p>
 
+      <a href="/apply"
+        class="bg-blue-900 hover:bg-blue-800 text-white py-2 px-4 mt-8 rounded">
+        2025 동아리 지원하기</a>
+
       <!-- 방송일정 카드 그리드 -->
       <p class="mt-[7.5rem] text-xl font-semibold">예정된 방송일정</p>
       <div class="flex flex-wrap justify-center mt-[2rem] gap-4 max-w-screen-lg">
